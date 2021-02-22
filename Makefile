@@ -4,7 +4,10 @@ SRCDIR = Src
 NAME = $(BINDIR)/alakajam
 MAP = $(BINDIR)/alakajam.map
 
+# example target cl65 line.
 # cl65 -t nes -Oisr -c crt0.s
+# note: it is recommended to move away from direct cl65 invocation
+# and use ca65 and cc65 for configurability reasons
 
 CFLAGS =-t nes -Oisr -g --include-dir neslib
 CC = cl65
